@@ -1,0 +1,11 @@
+Nav{
+    grid-column: 6/11;
+}
+ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+}
+li{
+    display: grid;
+    place-items: center;
+}

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 :root{
@@ -29,6 +30,14 @@
   font-size: 40px;
   line-height: 48px;
   color: var(--sc3);
+}
+.header-link-text{
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 48px;
+  color: var(--sc4);
 }
 .lead-text{
   font-family: 'Karla';

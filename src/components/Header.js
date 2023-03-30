@@ -1,10 +1,11 @@
 import React from 'react';
 import Nav from './Nav';
-
+import Logo from "../assets/Logo.svg";
+import styles from "../styles/Header.module.css";
 const Header = () => {
     return (
         <header>
-            <img/>
+            <img src={Logo}/>
             <Nav></Nav>
         </header>
     );
