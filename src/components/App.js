@@ -1,15 +1,24 @@
 import styles from '../styles/App.css';
-import Footer from './Footer';
-import Header from './Header';
-import Main from './Main';
+import { createBrowserRouter,RouterProvider } from 'react-router-dom';
+import HomePage from '../pages/HomePage';
+import ReserveTablePage from '../pages/ReserveTablePage';
+
+const router = createBrowserRouter([
+  {
+    path:"/",
+    element:<HomePage/>
+  },
+  {
+    path:"/ReserveTable",
+    element:<ReserveTablePage/>
+  }
+]);
 
 function App() {
   return (
-    <div className='container'>
-      <Header></Header>
-      <Main></Main>
-      <Footer></Footer>
-    </div>
+    <>
+      <RouterProvider router={router}/>
+    </>
   );
 }
 
