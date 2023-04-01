@@ -1,0 +1,10 @@
+.container{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows:auto 1fr 10rem;
+}
+.flagGreen{
+    width: 100%;
+    display: grid;
+    background-color: var(--pc1);
+}

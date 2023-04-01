@@ -1,0 +1,7 @@
+.highLights{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 20px;
+    padding: 1rem 10vw;
+    align-items: center;
+}

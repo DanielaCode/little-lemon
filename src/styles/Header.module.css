@@ -1,11 +1,11 @@
-Header{
+header{
     display: grid;
     grid-template-columns: repeat(12,1fr);
     gap: 20px;
     padding: 1rem 10vw;
     align-items: center;
 }
-img{
+.img{
     width: 100%;
     height: auto;
     grid-column: 3/5;
