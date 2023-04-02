@@ -23,6 +23,16 @@
   color: var(--pc2);
 }
 
+.diplay2-text{
+  font-family: 'Markazi Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 77px;
+  color: var(--sc4);
+}
+
+
 .sub-title-text{
   font-family: 'Markazi Text';
   font-style: normal;
@@ -34,7 +44,7 @@
 .header-link-text{
   font-family: 'Karla';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 00;
   font-size: 1rem;
   line-height: 48px;
   color: var(--sc4);
@@ -77,6 +87,13 @@
   font-weight: 400;
   font-size: 16px;
   color: var(--sc4);
+}
+.paragraph-card-text{
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--sc1);
 }
 .highligth-text{
   font-family: 'Karla';
