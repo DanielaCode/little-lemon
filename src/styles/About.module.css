@@ -2,6 +2,22 @@
     display: grid;
     grid-template-columns: repeat(12,1fr);
     gap: 20px;
-    padding: 1rem 10vw;
+    padding: 10rem 10vw;
     align-items: center;
+    background-color: var(--sc2);
 }
+.title{
+    grid-column: 3/11;
+    text-align: center;
+}
+.cardsContainer{
+    grid-column: 3/11;
+    padding: 1rem;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    overflow: auto;
+}
+.cardsContainer::-webkit-scrollbar {
+    display: none;
+ }
