@@ -4,7 +4,6 @@ import logo from "../assets/logolarge.png";
 const Footer = () => {
     return (
         <footer className={styles.footer}>
-            <img src={logo} className={styles.img}/>
             <div className={styles.info}>
                 <div className={styles.nav}>
                     <h3>Navegation</h3>

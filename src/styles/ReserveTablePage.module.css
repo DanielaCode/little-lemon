@@ -1,5 +1,23 @@
 .container{
     min-height: 100vh;
     display: grid;
-    grid-template-rows:auto 1fr 10rem;
+    grid-template-rows:auto 1fr auto;
+    background-color: var(--sc3);
+}
+.flagGreen{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 20px;
+    padding: 5rem 10vw;
+    align-items: center;
+    background-color: var(--pc1);
+}
+.info{
+    grid-column:3/6;
+}
+.img{
+    width: 100%;
+    height: auto;
+    grid-column:8/11;
+    border-radius: 20px;
 }

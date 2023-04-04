@@ -2,18 +2,15 @@
     display: grid;
     grid-template-columns: repeat(12,1fr);
     gap: 20px;
-    padding: 10vw;
+    padding: 5rem;
     align-items: center;
     background-color: var(--sc4);
 }
-.img{
-    width: 100%;
-    height: auto;
-    grid-column: 3/5;
-}
 .info{
     grid-column: 5/11;
-    width: 100%;
     display: flex;
     justify-content: space-around;
+}
+.footer div p, .footer div h3{
+    color: var(--sc3);
 }

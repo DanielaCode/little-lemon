@@ -1,0 +1,48 @@
+.formSection{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(2,auto);
+    gap: 20px;
+    padding:2rem 10vw;
+}
+.form{
+    grid-column: 4/10;
+    padding: 5rem;
+}
+.form input, .form select{
+    width: 100%;
+    height: 80px;
+    margin: 1rem 0;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 18px;
+    color:var(--pc1);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background-color: var(--sc3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.form label{
+    color:var(--pc1);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.form Button{
+    width: 100%;
+}
+.form input[type="date"]::-webkit-calendar-picker-indicator{
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Crect width='100' height='100' fill='url(%23pattern0)'/%3E%3Cdefs%3E%3Cpattern id='pattern0' patternContentUnits='objectBoundingBox' width='1' height='1'%3E%3Cuse xlink:href='%23image0_117_248' transform='scale(0.01)'/%3E%3C/pattern%3E%3Cimage id='image0_117_248' width='100' height='100' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB0klEQVR4nO3cwWrCQBSF4TzemZ2LminUpO9e+xYWLKldlIK0RpOce+f/IeDyXj/MwCzsOiIiIiIiIiIiIiIiIiIiIiKizSqHfqehvpehf5s+d8krh35Xxv749bjtq6Huy1hPZazn6dFYPzTuD13S5Lzv7+Esh2xl32vDWQ3Zyr5/DWcxZCv7/ne4LChy3vfW4aKjyHnfucNFRZHzvvcOFw1Fzvs+argoKHLe99HDuaPIed+lhnNFkfO+l7ua5Yb78ZzKUOvDv90bm2ZYbd85d1+Xi7PFh7NAKethfD/90R1kM5SyOkY9Tzfizq+szVDKFhhzX1lTGp+f1h5YKx30Sx/gV3d77V/uGzwhiqJiZERRdIxMKMqCkQFF2TAioygrRkQUZceIhKJWMCKgqDUMZxS1iuGIotYxnFAEhg+KwDC7QR1z30yH+6WU1s+MVlEUESMriiJjZENRBowsKMqEER1FGTGioigzRjQUtYARBUUtYbijqEUMVxS1jOGGIjB8UASGzy9FYPi8vgSGz5kiMHwOeoHhgyIwfFAEhg+KwPBBERg+KALDB0Vg+KAIDB8UgeGDIjB8UASG0R8aD238gTMREREREREREREREREREVHXaJ9jKqWuKwr81wAAAABJRU5ErkJggg=='/%3E%3C/defs%3E%3C/svg%3E%0A");
+
+}
+.form select{
+    appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
