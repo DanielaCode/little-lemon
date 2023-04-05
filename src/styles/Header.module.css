@@ -5,9 +5,15 @@ header{
     padding: 1rem 10vw;
     align-items: center;
     background-color: var(--pc1);
+    position: relative;
 }
 .img{
     width: 100%;
     height: auto;
-    grid-column: 3/5;
+    grid-column: 3/6;
+}
+@media(max-width:760px){
+    .img{
+        grid-column: 3/6;
+    }
 }
