@@ -1,14 +1,15 @@
 import React from 'react';
 import styles from "../styles/Nav.module.css";
+import {Link} from 'react-router-dom';
 const Nav = () => {
     return (
         <nav>
             <ul>
-                <li><a className='header-link-text'>Order Online</a></li>
-                <li><a className='header-link-text'>About</a></li>
-                <li><a className='header-link-text'> Home</a></li>
-                <li><a className='header-link-text'>Login</a></li>
-                <li><a className='header-link-text'>Reservations</a></li>
+                <li><Link className='header-link-text'>Order Online</Link></li>
+                <li><Link className='header-link-text'>About</Link></li>
+                <li><Link to="/" className='header-link-text'> Home</Link></li>
+                <li><Link className='header-link-text'>Login</Link></li>
+                <li><Link to="/ReserveTable" className='header-link-text'>Reservations</Link></li>
             </ul>
         </nav>
     );
