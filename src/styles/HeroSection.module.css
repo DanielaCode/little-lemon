@@ -8,9 +8,9 @@
 .info{
     grid-column:3/6;
 }
-.img{
+.img{ 
     width: 100%;
-    height: auto;
-    grid-column:8/11;
-    border-radius: 20px;
+    margin-top: 2rem;
+    grid-column:6/11;
+    transform: rotate(-45deg);
 }

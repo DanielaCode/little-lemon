@@ -4,7 +4,6 @@
     gap: 20px;
     padding: 10rem 10vw;
     align-items: center;
-    background-color: var(--sc2);
 }
 .title{
     grid-column: 3/11;

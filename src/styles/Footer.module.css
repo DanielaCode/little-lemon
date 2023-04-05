@@ -11,6 +11,9 @@
     display: flex;
     justify-content: space-around;
 }
+.img{
+    grid-column: 3/5;
+}
 .footer div p, .footer div h3{
     color: var(--sc3);
 }

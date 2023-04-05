@@ -1,11 +1,12 @@
-Nav{
+nav{
     grid-column: 6/11;
 }
-ul{
+nav ul{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
 }
-li{
+nav ul li{
     display: grid;
     place-items: center;
 }
+

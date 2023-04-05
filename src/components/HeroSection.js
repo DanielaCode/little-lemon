@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "../styles/HeroSection.module.css";
-import img from "../assets/marioandandres.jpg";
+import img from "../assets/pizza.webp";
 import Button from './Button';
 
 export default function HeroSection() {
@@ -12,7 +12,8 @@ export default function HeroSection() {
         <p className='lead-text'>Lorem ipsum dolor sit amet consectetur. Vitae velit id pulvinar massa in ut blandit ultrices. Quam sodales diam fermentu.</p>
         <Button text="Reserve Table"/>
       </div>
-      <img className={styles.img} src={img}/>
+      <img src={img} className={styles.img}/>
+     
     </div>
   )
 }

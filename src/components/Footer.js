@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from "../styles/Footer.module.css";
-import logo from "../assets/logolarge.png";
+import logo from '../assets/logoLarge.svg';
 const Footer = () => {
     return (
         <footer className={styles.footer}>
+            <img className={styles.img} src={logo}/>
             <div className={styles.info}>
                 <div className={styles.nav}>
                     <h3>Navegation</h3>
