@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useRef,forwardRef} from 'react';
 import styles from "../styles/HighLights.module.css";
 import Button from "./Button";
 import Card from "./Card";
@@ -7,8 +7,9 @@ import grekSalad from "../assets/grekSalad.jpg";
 import restaurantFood from "../assets/restaurantFood.jpg";
 import restaurantchef from "../assets/restaurantchef.jpg";
 
-export default function HighLights() {
-  
+
+const HighLights=forwardRef((props,ref)=> {
+  const refHls = useRef();
   const infoCards=[
     {
       path:lemon,
@@ -41,7 +42,7 @@ export default function HighLights() {
 );
 
   return (
-    <div className={styles.highLights}>
+    <div className={styles.highLights} ref={ref}>
       <div className={styles.orderMenu}>
         <p className='diplay2-text'>This week specials!</p>
         <Button text="Order Menu"/>
@@ -51,4 +52,5 @@ export default function HighLights() {
       </div>
     </div>
   )
-}
+});
+export default HighLights;

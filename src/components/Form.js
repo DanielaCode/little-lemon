@@ -30,9 +30,7 @@ export default function Form() {
     }),
 
     onSubmit: values => {
-      //alert(JSON.stringify(values, null, 2));
       setConfirmation(true);
-      formik.resetForm();
     },
   });
 

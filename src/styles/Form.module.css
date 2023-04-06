@@ -3,7 +3,7 @@
     align-items: center;
     grid-template-columns: repeat(12,1fr);
     gap: 50px;
-    padding:2rem 10vh;
+    padding:2rem 10vw;
 }
 .info{
     grid-column:3/7;
@@ -72,7 +72,7 @@
 @media(max-width:1024px){
     .formSection{
         padding: 0;
-        grid-template-rows: repeat(2,min-content);
+        gap: 0;
     }
     .info{
         grid-column: 3/11;

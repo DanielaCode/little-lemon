@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import styles from "../styles/About.module.css";
 import SmallCard from './SmallCard';
 import uno from "../assets/1.png";
@@ -7,7 +7,7 @@ import tres from "../assets/3.png";
 import cuatro from "../assets/4.png";
 import cinco from "../assets/5.png";
 
-export default function About() {
+const About=forwardRef((props,ref)=> {
 
   const infoCards=[
     {
@@ -45,11 +45,12 @@ export default function About() {
         <SmallCard name={card.name} img={card.img} stars={card.stars} comments={card.comments}/>
     );
   return (
-    <div className={styles.about}>
+    <div className={styles.about} ref={ref}>
       <p className={`${styles.title} diplay2-text`}>What customers say!</p>
       <div className={styles.cardsContainer}>
           {cardList}
       </div>
     </div>
   )
-}
+});
+export default About;

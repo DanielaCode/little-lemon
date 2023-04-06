@@ -8,7 +8,7 @@ import styles from "../styles/ReserveTablePage.module.css";
 export default function ReserveTablePage() {
   return (
     <div className={styles.container}>
-        <Header/>
+        <Header notHome={true}/>
         <Main>
           <Form/>
         </Main>
