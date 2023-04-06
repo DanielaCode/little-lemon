@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "../styles/Form.module.css";
 import Button from "./Button";
-import { useFormik } from 'formik';
+import { useFormik} from 'formik';
 import * as Yup from 'yup';
 import {useState} from 'react';
 
@@ -32,6 +32,7 @@ export default function Form() {
     onSubmit: values => {
       //alert(JSON.stringify(values, null, 2));
       setConfirmation(true);
+      formik.resetForm();
     },
   });
 
