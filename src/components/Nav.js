@@ -7,28 +7,26 @@ const Nav =forwardRef((props,ref) => {
     const [menu,setMenu] = useState(false);
     const handleOnClick=()=>{
         setMenu(!menu)
-        console.log(menu);
     }
     const handleClick = (refP)=> {
         var element;
-        if (refP=="hls") {
+        if (refP==="hls") {
             element = ref.hls.current;
         } else {
             element = ref.about.current;
         }
-        console.log(element);
         if (element) {
             element.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
-        }
+            behavior: "smooth",
+              block: "start",
+          });
+       }
       };
     return (
         <nav>
             <div className={styles.menu} onClick={handleOnClick}>
                 Menu
-                <img src={arrow} className={menu && styles.menuHover}/>
+                <img src={arrow} className={menu && styles.menuHover} alt='arrow menu'/>
             </div>
             <ul className={menu && styles.navVisible}>
                 {!props.notHome&& <li onClick={()=>handleClick("hls")}><Link className='header-link-text' >Order Online</Link></li>}

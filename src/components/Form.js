@@ -6,7 +6,7 @@ import * as Yup from 'yup';
 import {useState} from 'react';
 
 export default function Form() {
-  const [confirmation,setConfirmation] = useState(false);
+  const [confirmation,setConfirmation] = useState(undefined);
   const formik = useFormik({
     initialValues: {
 
@@ -33,7 +33,7 @@ export default function Form() {
       setConfirmation(true);
     },
   });
-
+ 
   return (
     <div className={styles.formSection}>
       <div className={styles.info}>
@@ -50,9 +50,9 @@ export default function Form() {
             name='date'
             {...formik.getFieldProps('date')}
           />
-          {formik.touched.date && formik.errors.date ? (
+          {formik.touched.date && formik.errors.date &&(
             <p className='error'>{formik.errors.date}</p>
-             ) : null}
+             )}
         <label htmlFor='occasion'>Occasion:</label>
           <select
             id='occasion'
@@ -64,9 +64,9 @@ export default function Form() {
             <option>Birthday</option>
             <option>Engagement</option>
           </select>
-          {formik.touched.occasion && formik.errors.occasion ? (
+          {formik.touched.occasion && formik.errors.occasion && (
             <p className='error'>{formik.errors.occasion}</p>
-             ) : null}
+             ) }
         <label htmlFor='number'>Number of seats:</label>
           <input
             id='number'
@@ -74,11 +74,11 @@ export default function Form() {
             name='number'
             {...formik.getFieldProps('number')}
           />
-          {formik.touched.number && formik.errors.number ? (
+          {formik.touched.number && formik.errors.number && (
             <p className='error'>{formik.errors.number}</p>
-             ) : null}
+             ) }
         <Button text="Submit" type="submit"/>
-        {confirmation?<div className={styles.confirmation}>confirmed!</div>:null}
+        {confirmation&&<div className={styles.confirmation}>confirmed!</div>}
       </form>
     </div>
   );

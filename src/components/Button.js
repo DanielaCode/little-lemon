@@ -5,7 +5,7 @@ export default function Button(props) {
   return (
     <>
       <button className={`${styles.button} card-title-text`} type={props.type}>
-        <Link to={props.link?props.link:"#"} >{props.text}</Link>
+        <Link to={props.link&&props.link} >{props.text}</Link>
       </button>
     </>
   )
