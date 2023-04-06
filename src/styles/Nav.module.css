@@ -1,12 +1,14 @@
 nav{
-    grid-column: 6/11;
+    grid-column: 5/11;
     position: relative;
 }
 nav ul{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    justify-content: end;
+    grid-auto-flow: column;
 }
 nav ul li{
+    padding: 0.25rem;
     display: grid;
     place-items: center;
 }
@@ -19,7 +21,8 @@ nav ul li{
     height: 100%;
     padding: 0.5rem 0.2rem;
     display: none;
-    place-content: center;
+    justify-content: end;
+    align-items: center;
     grid-column: 9/11;
     border-radius: 1rem;
     color: var(--sc3);
@@ -34,9 +37,10 @@ nav ul li{
    transition: all ease-in-out 3ms;
 }
 
-@media(max-width:760px){
+@media(max-width:1024px){
     nav ul{
         display: none;
+        grid-auto-flow: row;
         position: absolute;
         top: 50px;
         right: 0;

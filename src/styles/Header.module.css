@@ -10,10 +10,5 @@ header{
 .img{
     width: 100%;
     height: auto;
-    grid-column: 3/6;
-}
-@media(max-width:760px){
-    .img{
-        grid-column: 3/6;
-    }
+    grid-column: 3/5;
 }
