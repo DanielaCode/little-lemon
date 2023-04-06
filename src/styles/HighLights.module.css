@@ -25,8 +25,25 @@
 }
 
 .cards::-webkit-scrollbar {
-   display: none;
+    width: 5px;   
+    height: 5px;            /* width of the entire scrollbar */
+    background: none;
 }
+
+.cards::-webkit-scrollbar-track {
+    background: none;       /* color of the tracking area */
+    width: 5px;
+    height: 5px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+    width: 5px;
+    height: 5px;
+    background-color:rgba(51, 51, 51, 0.2);    /* color of the scroll thumb */
+    border-radius: 2.5px;       /* roundness of the scroll thumb */
+    border: none; /* creates padding around scroll thumb */
+}
+
 
 @media(max-width:1024px){
     .orderMenu{

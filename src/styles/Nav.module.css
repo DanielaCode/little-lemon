@@ -36,6 +36,16 @@ nav ul li{
    transform: rotate(-180deg);
    transition: all ease-in-out 3ms;
 }
+li a{
+    text-decoration: none;
+    color: var(--sc3);
+}
+li a:link{
+    color: var(--sc3);
+}
+li a:visited{
+    color: var(--sc3);
+}
 
 @media(max-width:1024px){
     nav{

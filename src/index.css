@@ -4,6 +4,25 @@
   box-sizing: border-box;
   list-style: none;
 }
+*::-webkit-scrollbar {
+  width: 5px;   
+  height: 5px;            /* width of the entire scrollbar */
+  background: none;
+}
+
+*::-webkit-scrollbar-track {
+  background: none;       /* color of the tracking area */
+  width: 5px;
+  height: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  width: 5px;
+  height: 5px;
+  background-color:rgba(51, 51, 51, 0.2);    /* color of the scroll thumb */
+  border-radius: 2.5px;       /* roundness of the scroll thumb */
+  border: none; /* creates padding around scroll thumb */
+}
 
 :root{
   --pc1: #495E57;
@@ -16,6 +35,13 @@
 
 a{
   text-decoration: none;
+  color: var(--sc4);
+}
+a:link{
+  color: var(--sc4);
+}
+a:visited{
+  color: var(--sc4);
 }
 
 .diplay-text{
