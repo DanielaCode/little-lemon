@@ -13,7 +13,6 @@ export default function HeroSection() {
         <Button text="Reserve Table"/>
       </div>
       <img src={img} className={styles.img}/>
-     
     </div>
   )
 }

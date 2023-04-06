@@ -38,9 +38,14 @@ nav ul li{
 }
 
 @media(max-width:1024px){
+    nav{
+        grid-column: 7/11;
+    }
     nav ul{
         display: none;
         grid-auto-flow: row;
+        width: max-content;
+        padding: 0.5rem;
         position: absolute;
         top: 50px;
         right: 0;

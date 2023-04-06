@@ -17,3 +17,18 @@
 .footer div p, .footer div h3{
     color: var(--sc3);
 }
+@media(max-width:1024px){
+    .footer{
+        padding: 2rem 0;
+        gap: 0;
+    }
+    .img{
+        display: none;
+    }
+    .info{
+        grid-column: 3/11;
+    }
+    .info h3, .info p{
+        font-size: 10px;
+    }
+}

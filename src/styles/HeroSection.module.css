@@ -3,14 +3,26 @@
     grid-template-columns: repeat(12,1fr);
     gap: 20px;
     padding: 1rem 10vw;
+    justify-items: center;
     align-items: center;
 }
 .info{
     grid-column:3/6;
 }
-.img{ 
+.img{
     width: 100%;
     margin-top: 2rem;
     grid-column:6/11;
     transform: rotate(-45deg);
+}
+@media(max-width:1024px){
+    .img{
+        display: none;
+    }
+    .info{
+        grid-column:3/11;
+    }
+    .heroSection{
+        padding: 0;
+    }
 }

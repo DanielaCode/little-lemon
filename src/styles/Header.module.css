@@ -12,3 +12,11 @@ header{
     height: auto;
     grid-column: 3/5;
 }
+@media(max-width:1024px){
+    .img{
+        grid-column: 3/7;
+    }
+    header{
+        padding: 1rem 0;
+    }
+}

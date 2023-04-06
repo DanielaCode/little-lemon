@@ -1,10 +1,7 @@
 .button{
-    padding: 1rem 2rem;
+    padding: 1rem;
     border-radius: 20px;
     background-color: var(--pc2);
     border: none;
     margin: 1rem 0;
-}
-.some{
-    color: blue;
 }

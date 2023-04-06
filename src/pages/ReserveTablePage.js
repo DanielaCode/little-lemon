@@ -11,7 +11,6 @@ export default function ReserveTablePage() {
         <Header/>
         <Main>
           <Form/>
-          <img></img>
         </Main>
         <Footer/>
     </div>
