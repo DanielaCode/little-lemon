@@ -10,7 +10,7 @@ export default function HeroSection() {
         <h1 className='diplay-text'>Little Lemon</h1>
         <p className='sub-title-text'>Chicago</p>
         <p className='lead-text'>Lorem ipsum dolor sit amet consectetur. Vitae velit id pulvinar massa in ut blandit ultrices. Quam sodales diam fermentu.</p>
-        <Button text="Reserve Table"/>
+        <Button text="Reserve Table" link="/ReserveTable"/>
       </div>
       <img src={img} className={styles.img}/>
     </div>
